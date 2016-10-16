@@ -1,13 +1,5 @@
-#paginator {
-    padding: 10px;
-}
-
-#paginator a {
-    text-decoration: none;
-}
-
-.more {
-    margin-left: 80%;
+.post__img {
+    max-width 100%;
 }
 .text__header,
 .text__body {
