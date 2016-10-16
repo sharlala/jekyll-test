@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Guest Posts
-category: Meta
-author: John Smith
+title: Booth School of Business Rebranding
+category: Branding, Visual Design
+author: Peter Kim
 
-excerpt: How to quickly create guest blogs with a different author. 
+excerpt: A complete rebranding of the University of Chicago's Booth School of Business' branding and marketing guidelines.
 
 ---
 
