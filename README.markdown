@@ -1,60 +1,129 @@
-# [Jekyll](https://jekyllrb.com/)
+Simple Jekyll Site
+===
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll.svg)][ruby-gems]
-[![Linux Build Status](https://img.shields.io/travis/jekyll/jekyll/master.svg?label=Linux%20build)][travis]
-[![Windows Build status](https://img.shields.io/appveyor/ci/jekyll/jekyll/master.svg?label=Windows%20build)][appveyor]
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/jekyll/jekyll.svg)][coverage]
-[![Code Climate](https://img.shields.io/codeclimate/github/jekyll/jekyll.svg)][codeclimate]
-[![Dependency Status](https://img.shields.io/gemnasium/jekyll/jekyll.svg)][gemnasium]
-[![Security](https://hakiri.io/github/jekyll/jekyll/master.svg)][hakiri]
+[![endorse](https://api.coderwall.com/luke/endorsecount.png)](https://coderwall.com/luke)
 
-[ruby-gems]: https://rubygems.org/gems/jekyll
-[gemnasium]: https://gemnasium.com/jekyll/jekyll
-[codeclimate]: https://codeclimate.com/github/jekyll/jekyll
-[coverage]: https://codeclimate.com/github/jekyll/jekyll/coverage
-[hakiri]: https://hakiri.io/github/jekyll/jekyll/master
-[travis]: https://travis-ci.org/jekyll/jekyll
-[appveyor]: https://ci.appveyor.com/project/jekyll/jekyll/branch/master
+This is an example of a very basic Jekyll site. It lays down the basic folder structure, uses very basic CSS to make it look presentable and leaves everything else up to you.
 
-Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](https://pages.github.com), which you can use to host sites right from your GitHub repositories.
+This is a perfect starting point for building your own Jekyll site.
 
-## Philosophy
+Requirements
+------------
 
-Jekyll does what you tell it to do — no more, no less. It doesn't try to outsmart users by making bold assumptions, nor does it burden them with needless complexity and configuration. Put simply, Jekyll gets out of your way and allows you to concentrate on what truly matters: your content.
+Development time dependencies:
 
-## Having trouble with OS X El Capitan?
+* [Ruby][rb]
+* [Gems][gm]
+* [Jekyll][jk]
+* [Rdiscount][rd] (optional - comment out in `_config.yaml` to use Maroku)
+* [Node.js][no] & [Grunt.js][gr] (optional - only if you wish to use GruntJS)
 
-See: https://jekyllrb.com/docs/troubleshooting/#jekyll-amp-mac-os-x-1011
+Run-time dependencies:
 
-## Getting Started
+* A web server (any will do)
 
-* [Install](https://jekyllrb.com/docs/installation/) the gem
-* Read up about its [Usage](https://jekyllrb.com/docs/usage/) and [Configuration](https://jekyllrb.com/docs/configuration/)
-* Take a gander at some existing [Sites](https://wiki.github.com/jekyll/jekyll/sites)
-* [Fork](https://github.com/jekyll/jekyll/fork) and [Contribute](https://jekyllrb.com/docs/contributing/) your own modifications
-* Have questions? Check out our official forum community [Jekyll Talk](https://talk.jekyllrb.com/) or [`#jekyll` on irc.freenode.net](https://botbot.me/freenode/jekyll/)
 
-## Code of Conduct
+Beginners Guide
+---------------
 
-In order to have a more open and welcoming community, Jekyll adheres to a
-[code of conduct](CONDUCT.markdown) adapted from the Ruby on Rails code of
-conduct.
+To use this template:
 
-Please adhere to this code of conduct in any interactions you have in the
-Jekyll community. It is strictly enforced on all official Jekyll
-repositories, websites, and resources. If you encounter someone violating
-these terms, please let a maintainer ([@parkr](https://github.com/parkr), [@envygeeks](https://github.com/envygeeks), or [@mattr-](https://github.com/mattr-)) know
-and we will address it as soon as possible.
+1. Clone to some directory
+* Modify `_config.yaml` with your name, blog title, description and etc...
+* Tweak `style.css` and HTML files in `_layouts` to personalize
+* Create blog entries in `_posts/` - work off the sample posts there
+* Run `jekyll serve` to generate site locally
+* View it by going to `http://localhost:4000` and make sure it looks good
+* If all is well, upload contents of `_site` to your server
+* Repeat steps 4-7 to update blog
 
-## Diving In
+Features
+--------
 
-* [Migrate](http://import.jekyllrb.com/docs/home/) from your previous system
-* Learn how the [YAML Front Matter](https://jekyllrb.com/docs/frontmatter/) works
-* Put information on your site with [Variables](https://jekyllrb.com/docs/variables/)
-* Customize the [Permalinks](https://jekyllrb.com/docs/permalinks/) your posts are generated with
-* Use the built-in [Liquid Extensions](https://jekyllrb.com/docs/templates/) to make your life easier
-* Use custom [Plugins](https://jekyllrb.com/docs/plugins/) to generate content specific to your site
+Following features are available:
 
-## License
+* Automatically generate a valid RSS feed (see feed.xml in root directory).
+* Automatically generate a valid Google Sitemap (see sitemap.xml in root directory).
+* Organize your posts into categories and automatically generate category index pages.
+* Can be deployed in a subdirectory
 
-See the [LICENSE](https://github.com/jekyll/jekyll/blob/master/LICENSE) file.
+Using Categories
+----------------
+
+To use the category feature simply add category tag at the top of your post:
+
+    category: some_category_name
+
+You can specify multiple categories using a comma separated list.
+
+Known Issues
+------------
+
+The plugins in the `_plugins` directory are not compatible with Github pages. If you want to deploy your site to Github, you might need to give up on these plugins.
+
+Deploying to Subdirectory
+-------------------------
+
+You can deploy to a subdirectory. For example instead of running your site at `http://foo.tld/` you can instead put it in `http://foo.tld/blog/`. To do this use the `url` and  `baseurl` settings in `_config.yaml`. The former is used for absolute links (like in the RSS feed) while the latter is used for relative links (like everywhere on the front page). For example if you set it to:
+
+    baseurl: /blog
+    url: http://foo.tld/blog
+
+Then the html files will still be generated in `_site` but all the links will be generated either relative to `/blog` or using the absolute url of `http://foo.tld/blog`. 
+
+**Note**: when you run the built-in Jekyll server you will need to access your site by going to `http://localhost:4000/blog`.
+
+Linting & Validation
+---
+
+You can use [Grunt.js][gr] to automatically validate the HTML in your generated site. First install the dependencies:
+
+    npm install
+
+You can use the following Grunt commands:
+
+- `grunt jshint` - to lint your `scripts.js` file using JSHint
+- `grunt csslint` - to lint your `styles.css` file
+- `grunt validation` - to validate all the HTML files in `_site`
+
+Please note that validation is done against the W3C server. If you have many pages, you may get temporarily locked out for abuse.
+
+To lint js and css simultaneously simply run `grunt` with no parameters. Validation is only on-demand because of the potential lockout.
+
+
+Credits
+-------
+
+This sample layout uses plugins created by [Dave Perret][dp] to generate categories and sitemaps. Credit where credit is due. Please see the `_plugins` directory for details.
+
+The web font icons have been created based on the [Typicon][ty] set and customized via the [Fontello][fo] service.
+
+
+Screenshots
+-----------
+
+Just so you can see how it looks:
+
+Front page:  
+  
+![Front Page](http://i.imgur.com/WeXFkWn.jpg) 
+  
+Individual post:
+  
+![Individual post](http://i.imgur.com/o6sSJEt.jpg) 
+  
+Archive page:
+  
+![Archive page](http://i.imgur.com/Fmy6FPt.jpg) 
+
+
+[rb]: http://www.ruby-lang.org/
+[gm]: http://rubygems.org/
+[jk]: https://github.com/mojombo/jekyll
+[rd]: https://github.com/rtomayko/rdiscount/
+[dp]: http://recursive-design.com
+[gr]: http://gruntjs.com
+[no]: http://nodejs.com
+
+[ty]: http://typicons.com/
+[fo]: http://fontello.com/
