@@ -3,7 +3,7 @@ layout: post
 title: Booth School of Business Rebranding
 category: Branding, Visual Design
 author: Peter Kim
-tags: A complete rebranding of the University of Chicago's Booth School of Business' branding and marketing guidelines.
+description: A complete rebranding of the University of Chicago's Booth School of Business' branding and marketing guidelines.
 
 excerpt: A complete rebranding of the University of Chicago's Booth School of Business' branding and marketing guidelines.
 
