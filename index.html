@@ -4,37 +4,45 @@ title: Home
 ---
 
 <!-- Show last 5 posts here -->
-  <div class="row">
-    <div class="col-sm-6 col-xs-12"><a href="{{site.baseurl}}{{post.url}}" class="work__container">
-        {% for post in site.posts limit: 2 %}
-        <div class="text__overlay hidden-xs">
-          <div class="text__header">{{ post.title }}</div>
-          <div class="header__border--bottom"></div>
-          <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
+<div class="container_fluid">
+    <div class="row section__container footer__container">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="text__header">Selected works</div>
+            <div class="header__border--bottom"></div>
+            <div class="row">
+                {% for post in site.posts limit: 2 %}
+                    <div class="col-sm-6 col-xs-12"><a href="{{site.baseurl}}{{post.url}}" class="work__container">
+                        <div class="text__overlay hidden-xs">
+                            <div class="text__header">{{ post.title }}</div>
+                            <div class="header__border--bottom"></div>
+                            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
+                        </div><img src="https://cloud.githubusercontent.com/assets/21296744/18262665/4f117bfe-73c9-11e6-8887-a9c924df2d61.png" class="work"/></a>
+                        <div class="work__caption--mobile visible-xs">
+                            <div class="text__header">{{ post.title }}</div>
+                            <div class="header__border--bottom"></div>
+                            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
+                        </div>
+                    </div>
+                {% endfor %}
+                {% for post in site.posts limit: 2 offset: 2 %}
+                    <div class="col-sm-6 col-xs-12"><a href="{{site.baseurl}}{{post.url}}" class="work__container">
+                        <div class="text__overlay hidden-xs">
+                          <div class="text__header">{{ post.title }}</div>
+                          <div class="header__border--bottom"></div>
+                          <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
+                        </div><img src="https://cloud.githubusercontent.com/assets/21296744/18262776/3c183c76-73ca-11e6-8928-3e3f8af89ed5.png" class="work"/></a>
+                        <div class="work__caption--mobile visible-xs">
+                            <div class="text__header">{{ post.title }}</div>
+                            <div class="header__border--bottom"></div>
+                            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-        <img src="https://cloud.githubusercontent.com/assets/21296744/18262665/4f117bfe-73c9-11e6-8887-a9c924df2d61.png" class="work"/></a>
-          <div class="work__caption--mobile visible-xs">
-            <div class="text__header">{{ post.title }}</div>
-            <div class="header__border--bottom"></div>
-            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
-          </div>
-          {% endfor %}
     </div>
-    <div class="col-sm-6 col-xs-12"><a href="http://www.google.com" class="work__container">
-        {% for post in site.posts limit: 2 offset: 2 %}
-            <div class="text__overlay hidden-xs">
-              <div class="text__header">Chicago Booth Rebranding</div>
-              <div class="header__border--bottom"></div>
-              <div class="text__body">A complete rebranding of the University of Chicago's Booth School of Business' branding and marketing guidelines.</div>
-            </div><img src="https://cloud.githubusercontent.com/assets/21296744/18262776/3c183c76-73ca-11e6-8928-3e3f8af89ed5.png" class="work"/></a>
-          <div class="work__caption--mobile visible-xs">
-            <div class="text__header">Chicago Booth Rebranding</div>
-            <div class="header__border--bottom"></div>
-            <div class="text__body">A complete rebranding of the University of Chicago's Booth School of Business' branding and marketing guidelines.</div>
-          </div>
-        {% endfor %}
-    </div>
-      </div>
+</div>
+
 
 <div id="paginator">
     {% if paginator.next_page %}
