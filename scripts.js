@@ -1,3 +1,8 @@
 // Your scripts go here.
-
-console.log('hello world!');
+$(document).ready(function() {
+	$('.nav .dropdown').hover(function() {
+		$(this).addClass('open');
+	}, function() {
+		$(this).removeClass('open');
+	});
+});
