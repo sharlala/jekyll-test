@@ -19,10 +19,6 @@
   background-color: #ffffff;
   border-color: #c93;
 }
-.navigation>li>a:hover {
-  background-color: #ffffff;
-  border-color: #c93;
-}
 .dropdown-menu {
   border-radius: 0px;
   padding: 10px 0px;
@@ -30,9 +26,6 @@
   -webkit-box-shadow: 0 0 0 0 #c8c8c8;
   box-shadow: 0 0 0 0 #c8c8c8;
   -moz-box-shadow: 0 0 0 0 #c8c8c8;
-}
-.dropdown--menu {
-  padding: 10px 0px;
 }
 .dropdown-menu>li>a {
   font-weight: 500;
