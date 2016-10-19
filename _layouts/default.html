@@ -18,61 +18,46 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     	<script src="{{site.baseurl}}/scripts.js"></script>
 	</head>
-	<body id="bootstrap--overrrides">
-		<div class="container-fluid">
-			<!--Navigation-->
-			<div class="row nav--top__container navbar-fixed-top">
-				<div class="col-sm-6 col-sm-offset-2">
-			    	<ul class="nav nav-pills nav--top__link--container">
-			        	<li><a href="{{site.baseurl}}/" class="nav--top__link nav--top--left">home</a></li>
-			        	<li class="dropdown"><a id="drop1" href="#" class="nav--top__link nav--top--mid">sections</a>
-			          		<ul id="menu1" role="menu" aria-labelledby="drop1" class="dropdown-menu">
-			            		<li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">Lifestyle</a></li>
-			            		<li role="presentation" class="divider"></li>
-			            		<li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">Design</a></li>
-			            		<li role="presentation" class="divider"></li>
-			            		<li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">Food</a></li>
-			          		</ul>
-			        	</li>
-			        	<li class="dropdown"><a id="drop1" href="#" class="nav--top__link nav--top--mid">about</a>
-			          	<ul id="menu1" role="menu" aria-labelledby="drop1" class="dropdown-menu">
-				            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">about me</a></li>
-				            <li role="presentation" class="divider"></li>
-				            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">contact</a></li>
-			          	</ul>
-			        </li>
-			        <li class="dropdown"><a id="drop1" href="#" class="nav--top__link nav--top--mid">follow</a>
-			          	<ul id="menu1" role="menu" aria-labelledby="drop1" class="dropdown-menu">
-				            <li role="presentation"><a role="menuitem" href="http://instagram.com/seesharunforit" class="nav--top--dropdown--menu-item">instagram</a></li>
-				            <li role="presentation" class="divider"></li>
-				            <li role="presentation"><a role="menuitem" href="http://pinterest.com/sharingchen" class="nav--top--dropdown--menu-item">pinterest</a></li>
-				            <li role="presentation" class="divider"></li>
-				            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">snapchat</a></li>
-				            <li role="presentation" class="divider"></li>
-				            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">youtube</a></li>
-				            <li role="presentation" class="divider"></li>
-				            <li role="presentation"><a role="menuitem" href="http://soundcloud.com/sharingchen" class="nav--top--dropdown--menu-item">soundcloud</a></li>
-			          	</ul>
-			        </li>
-			        <li><a href="#" class="nav--top__link nav--top--left"><span class="glyphicon glyphicon-search"></span></a></li>
-			      	</ul>
-			    </div>
-			</div>
-			<!--Body-->
-  			<div class="row header__container blog-post__container blog-post__container-0">
-				<div class="col-sm-5 col-sm-offset-2">
-      				<div class="style--header header__name">Sharonius
-        				<div class="style--subheader">A design & lifestyle blog</div>
-        				<div class="header__line"></div>
-      			</div>
-    		</div>
-
-
-<!-- 		<div class="container_fluid">
-			<div class="row section__container">
-				<div class="col-xs-10 col-xs-offset-1"><a href="{{site.baseurl}}/" class="text__header">{{ site.name }}</a></div>
-			</div>
-		</div> -->
+	<body>
+		<div id="override--bootstrap" class="container-fluid hidden-xs">
+		  <div class="row nav--top__container navbar-fixed-top">
+		    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+		      <ul class="nav nav-pills nav--top__link--container">
+		        <li><a href="#" class="nav--top__link nav--top--left">home</a></li>
+		        <li class="dropdown"><a id="drop1" href="#" class="nav--top__link nav--top--mid">sections</a>
+		          <ul id="menu1" role="menu" aria-labelledby="drop1" class="dropdown-menu">
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">Lifestyle</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">Design</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">Food</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown"><a id="drop1" href="#" class="nav--top__link nav--top--mid">about</a>
+		          <ul id="menu1" role="menu" aria-labelledby="drop1" class="dropdown-menu">
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">about me</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">contact</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown"><a id="drop1" href="#" class="nav--top__link nav--top--mid">follow</a>
+		          <ul id="menu1" role="menu" aria-labelledby="drop1" class="dropdown-menu">
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">instagram</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">pinterest</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">snapchat</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">youtube</a></li>
+		            <li role="presentation" class="divider"></li>
+		            <li role="presentation"><a role="menuitem" href="#" class="nav--top--dropdown--menu-item">soundcloud</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="#" class="nav--top__link nav--top--left"><span class="glyphicon glyphicon-search"></span></a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
 		{{ content }}
 	</body>
 </html>
