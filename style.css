@@ -29,7 +29,6 @@
  .dropdown-menu {
   border-radius: 0px;
   padding: 10px 0px;
-  padding-top: 10px;
   margin: 0px 0px 0px 5px;
   -webkit-box-shadow: 0 0 0 0 #c8c8c8;
   box-shadow: 0 0 0 0 #c8c8c8;
@@ -40,8 +39,8 @@
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-#bootstrap--overrrides
- .dropdown-menu>li>a:hover {
+#bootstrap--overrrides 
+.dropdown-menu>li>a:hover {
   background-color: #fff;
   color: #c93;
 }
