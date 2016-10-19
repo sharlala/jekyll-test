@@ -1,11 +1,4 @@
-/*Navigation*/
-.nav--top__container {
-  height: 80px;
-}
-.nav {
-  padding-left: 0px;
-  margin: 0px;
-}
+/*Bootstrap Overrides*/
 #bootstrap--overrrides
  .nav>li>a {
   display: inline-block;
@@ -44,6 +37,14 @@
   background-color: #fff;
   color: #c93;
 }
+/*Navigation*/
+.nav--top__container {
+  height: 80px;
+}
+.nav {
+  padding-left: 0px;
+  margin: 0px;
+}
 .nav--top__link--container {
   margin-top: 21px;
 }
@@ -77,4 +78,32 @@
 .nav--top--mid {
   margin: 0px 10px;
 }
-
+/*Header*/
+.header__name {
+  position: absolute;
+  font-size: 80px;
+  top: 60px;
+  opacity: 0.2;
+}
+.header__name:hover {
+  opacity: 1;
+  color: #333;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.header__name:hover .header__line {
+  background-color: #333;
+  width: 210px;
+  transition: width 0.5s ease;
+}
+.header__line {
+  height: 5px;
+  background-color: transparent;
+  width: 0px;
+  position: absolute;
+  top: 118px;
+  left: 165px;
+}
+.header__container {
+  margin-top: 80px;
+}
