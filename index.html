@@ -28,50 +28,7 @@ title: Home
     </div>
 
 
-
-<!-- Show last 5 posts here -->
-    <!-- Works -->
-<!-- <div class="container_fluid">
-    <div class="row section__container footer__container">
-        <div class="col-xs-10 col-xs-offset-1">
-            <div class="text__header">Selected works</div>
-            <div class="header__border--bottom"></div>
-            <div class="row">
-                {% for post in site.posts limit: 2 %}
-                    <div class="col-sm-6 col-xs-12"><a href="{{site.baseurl}}{{post.url}}" class="work__container">
-                        <div class="text__overlay hidden-xs">
-                            <div class="text__header">{{ post.title }}</div>
-                            <div class="header__border--bottom"></div>
-                            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
-                        </div><img src="https://cloud.githubusercontent.com/assets/21296744/18262665/4f117bfe-73c9-11e6-8887-a9c924df2d61.png" class="work"/></a>
-                        <div class="work__caption--mobile visible-xs">
-                            <div class="text__header">{{ post.title }}</div>
-                            <div class="header__border--bottom"></div>
-                            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
-                        </div>
-                    </div>
-                {% endfor %}
-                {% for post in site.posts limit: 2 offset: 2 %}
-                    <div class="col-sm-6 col-xs-12"><a href="{{site.baseurl}}{{post.url}}" class="work__container">
-                        <div class="text__overlay hidden-xs">
-                          <div class="text__header">{{ post.title }}</div>
-                          <div class="header__border--bottom"></div>
-                          <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
-                        </div><img src="https://cloud.githubusercontent.com/assets/21296744/18262776/3c183c76-73ca-11e6-8928-3e3f8af89ed5.png" class="work"/></a>
-                        <div class="work__caption--mobile visible-xs">
-                            <div class="text__header">{{ post.title }}</div>
-                            <div class="header__border--bottom"></div>
-                            <div class="text__body">{{ post.excerpt }}<br/><br/>{{ post.categories | category_links }}</div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
- -->
-
-<!-- <div id="paginator">
+<div id="paginator">
     {% if paginator.next_page %}
             <a href="{{site.baseurl}}/page{{paginator.next_page}}">
             &laquo; Older Posts</a>
@@ -90,4 +47,4 @@ title: Home
                 </span>
         {% endif %}
     {% endif %}
-</div> -->
+</div>
