@@ -198,6 +198,7 @@
   text-align: right;
   padding: 5px 10px;
   bottom: 150px;
+  left:75px;
   z-index: 3;
 }
 .post__more {
@@ -214,12 +215,12 @@
 }
 .post__date {
   top: 395px;
-  left: 122px;
+  left: 200px;
   color: #333;
   opacity: 0.2;
 }
 .post__excerpt {
   top: 421px;
-  width: 425px;
-  left: 122px;
+  width: 350px;
+  left: 200px;
 }
